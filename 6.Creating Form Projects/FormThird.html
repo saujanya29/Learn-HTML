@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Third</title>
+</head>
+<body>
+    <h2>Complex Form</h2>
+
+    <form >
+       
+        <fieldset>
+            <legend>Personal Information</legend>
+    
+    <!-- Name Field -->
+           <label for="name">Name:</label>
+           <input type="text" name="name" id="name">
+    <br><br>
+    
+    <!-- Email Field -->
+           <label for="email">Email ID:</label>
+           <input type="email" name="email" id="email">
+    <br><br>
+    
+    <!-- Phone Number -->
+           <label for="PhoneNumber">Phone:</label>
+           <input type="tel" name="PhoneNumber" id="PhoneNumber">
+    <br><br>
+    
+    <!-- Date Of Birth -->
+    <label for="dob">Date Of Birth</label>
+    <input type="date" id="dob" name="dob">
+    <br><br>
+    
+    <!-- Radio Buttons for Gender  -->
+    <span>Gender:</span>
+    
+    <input type="radio" id="Male" name="Gender">
+    <label for="Male">Male</label>
+    
+    <input type="radio" id="Female" name="Gender">
+    <label for="Female">Female</label>
+    <br><br>
+    
+    <!-- Drop Down For Country -->
+    <label for="Country">Country</label>
+    <select name="Country" id="Country">
+       
+        <option value="us">US</option>
+        <option value="india">India</option>
+        <option value="others">Others</option>
+        <!--  disabled : attribute will blur this option and you wont be able to select it
+              hidden : this attribute will this option from the drop down list
+              selected: this attribute will select this option as default 
+        -->
+         <option value="none"  disabled hidden selected>Choose Any Option</option>
+    
+    </select>
+    
+     </fieldset>
+
+ <!--Feildset for Address  -->
+    <FieldSet>
+        <legend>Address</legend>
+         
+        <label for="street">Street</label>
+        <input type="text" id="street" name="Street">
+
+        <label for="City">City</label>
+        <input type="text" id="City" name="City">
+
+        <label for="State">State</label>
+        <input type="text" id="State" name="State">
+
+        <label for="Zipcode">Zip Code</label>
+        <input type="text" id="Zipcode" name="Zipcode">
+
+    </FieldSet>
+
+
+<!-- Fieldset for Other information -->
+
+<fieldset>
+<legend>Other Information</legend>
+
+<label for="TextField">Comments</label>
+<textarea name="TextField" id="TextField" cols="30" rows="10"></textarea>
+
+<label for="checkbox1">I Agree to all the term of services</label>
+<input type="checkbox" id="checkbox1" name="checkbox1">
+</fieldset>
+
+<!-- Submit Button -->
+<input type="submit" value="Submit">
+    </form>
+    
+ 
+</body>
+</html>
